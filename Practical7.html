@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reponsive Layout</title>
+    <style>
+        body{
+            margin-top: 5px;
+            padding: 0;
+        }
+        #container{
+            border: 5px lightgrey solid;
+            width: 700px;
+            margin: auto;
+            padding: 15px;
+            box-shadow: black;
+        }
+        #header{
+            margin-top: 5px;
+            /*border: crimson solid;*/
+            background-color: lightgray;
+            width: auto;
+            height: 40px;
+            font-size: 28px;
+            color: white;
+            /*center to the div*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        #banner{
+            /*margin-top: 5px;*/
+            /*border: black solid;*/
+            background-color: #87ffe7;
+            width: auto;
+            height: 400px;
+            font-size: 28px;
+            color: white;
+            /*center to the div*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        #section-1{
+            /*border: black solid;*/
+            margin-bottom: 5px;
+        }
+        #part1 {
+            font-size: 20px;
+            /*center to the div*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        #part3 {
+            font-size: 20px;
+            /*center to the div*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+            clear: both;
+        }
+        #card1{
+            height: 140px;
+            margin: 5px;
+            width:22%;
+            float: left;
+            /*border: black solid;*/
+            background-color: darkgoldenrod;
+            border-radius: 50%;
+
+        }
+        #card2{
+            height: 140px;
+            margin: 5px;
+            width:22%;
+            float: left;
+            /*border: black solid;*/
+            background-color: darkgoldenrod;
+            border-radius: 50%;
+        }
+        #card3{
+            height: 140px;
+            margin: 5px;
+            width:22%;
+            float: left;
+            /*border: black solid;*/
+            background-color:darkgoldenrod;
+            border-radius: 50%;
+        }
+        #card4{
+            height: 140px;
+            margin: 5px;
+            width:22%;
+            float: left;
+            /*border: black solid;*/
+            background-color: darkgoldenrod;
+            border-radius: 50%;
+        }
+        #content{
+            /*border: black solid;*/
+            margin-bottom: 1px;
+            clear: both;
+        }
+        #content::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #left-sidebar{
+            margin:5px ;
+            width: 48%;
+            height: 300px;
+            /*margin-right: 2px;*/
+            /*border: greenyellow solid;*/
+            float: left;
+            background-color: grey;
+            font-size: 28px;
+            color: white;
+            /*center to the div*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*margin-bottom: 5px;*/
+            clear: both;
+        }
+        #right-sidebar{
+            width: 50%;
+            height: 300px;
+            /*border: green solid;*/
+            float: right;
+        }
+        #article1{
+            height: 97px;
+            margin: 5px;
+            /*border:black solid;*/
+            background-color: #ff8970;
+            font-size: 28px;
+            color: white;
+            /*center to the div*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            clear: both;
+        }
+        #article2{
+            height: 97px;
+            margin: 5px;
+            /*border:black solid;*/
+            background-color: #ff8970;
+            font-size: 28px;
+            color: white;
+            /*center to the div*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            clear: both;
+        }
+        #article3{
+            height: 96px;
+            margin: 5px;
+            /*border:black solid;*/
+            background-color: #ff8970;
+            font-size: 28px;
+            color: white;
+            /*center to the div*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            clear: both;
+        }
+        #section-2{
+            margin-top: 5px;
+            /*border: black solid;*/
+            margin-bottom: 5px;
+            clear: both;
+        }
+        #part4 {
+            /*center to the div*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+            font-size: 20px;
+            clear: both;
+        }
+        #part6 {
+            /*center to the div*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+            font-size: 20px;
+            float: none;
+        }
+        #part6{
+            clear: both;
+        }
+        #card{
+            height: 140px;
+            margin: 5px;
+            width:22%;
+            float: left;
+            /*border: black solid;*/
+            background-color: orangered;
+        }
+        #card5{
+            height: 140px;
+            margin: 5px;
+            width:22%;
+            float: left;
+            /*border: black solid;*/
+            background-color: orangered;
+        }
+        #card6{
+            height: 140px;
+            margin: 5px;
+            width:22%;
+            float: left;
+            /*border: black solid;*/
+            background-color: orangered;
+        }
+        #card7{
+            height: 140px;
+            margin: 5px;
+            width:22%;
+            float: left;
+            /*border: black solid;*/
+            background-color: orangered;
+        }
+        #footer{
+            /*margin-top: 5px;*/
+            /*border: crimson solid;*/
+            background-color: mediumpurple;
+            width: auto;
+            height: 40px;
+            font-size: 28px;
+            color: white;
+            /*center to the div*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*margin-bottom: 5px;*/
+        }
+        #footer{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="header">Header</div>
+    <div id="banner"> Banner</div>
+    <div id="section-1">
+        <div id="part1"><strong>Section-1</strong></div>
+        <div id="part2"><div id="card1"></div><div id="card2"></div><div id="card3"></div><div id="card4"></div></div>
+        <div id="part3"><strong>Section-2</strong></div>
+    </div>
+    <div id="content">
+        <div id="left-sidebar">Main Content</div>
+        <div id="right-sidebar">
+        <div id="article1">article1</div><div id="article2">article2</div><div id="article3">article3</div></div>
+        </div><br>
+    <div id="section-2">
+        <div id="part4"><strong>Section-3</strong></div>
+        <div id="part5"><div id="card"></div><div id="card5"></div><div id="card6"></div><div id="card7"></div></div>
+        <div id="part6"><strong>Section-4</strong></div>
+    </div>
+    <div id="footer">Footer</div>
+</div>
+</body>
+</html>
